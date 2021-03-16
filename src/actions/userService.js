@@ -4,7 +4,7 @@ import PostsHeader from '../services/potst-service'
 import axios from 'axios'
 
 
-const LoginUrl = 'https://articles-backend-api.herokuapp.com/api/'
+const LoginUrl = 'https://articles-backend-api.herokuapp.com/api/articles/'
  
 
 
@@ -37,7 +37,7 @@ export const CreateArticle=(image,user,tittle,discription)=> async(dispatch) =>{
     formData.append("discription",discription)
      
 
-    console.log (formData)
+ 
      
     const data = await axios.post(LoginUrl,formData,{headers:PostsHeader()}
      
