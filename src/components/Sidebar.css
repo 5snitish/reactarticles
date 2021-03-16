@@ -1,0 +1,21 @@
+#Sidebar{
+    height: 3000px;;
+    width:450px;  
+    padding-right: 5%;
+    margin: 0;
+    margin-top: 3%;
+    float: right;
+    
+    
+}
+
+#top-articles{
+    font-size: 30px;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    border-left: none;
+    border-right:none;
+    margin-bottom: 20px
+}
+

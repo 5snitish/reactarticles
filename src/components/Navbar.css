@@ -1,0 +1,10 @@
+#bt{
+padding-left:600px;
+}
+
+  #cont{
+    flex-direction: row  ;
+    flex-flow: column wrap;
+
+ }
+  
