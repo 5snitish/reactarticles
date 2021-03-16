@@ -1,7 +1,7 @@
 import axios from '../../node_modules/axios'
 
 
-const API_URL = "http://localhost:8000/api/"
+const API_URL = "https://articles-backend-api.herokuapp.com/api/"
  
 
 const register  = (username, email,password,first_name,last_name)=>{

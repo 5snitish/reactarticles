@@ -4,7 +4,7 @@ import PostsHeader from '../services/potst-service'
 import axios from 'axios'
 
 
-const LoginUrl = 'http://localhost:8000/api/articles/'
+const LoginUrl = 'https://articles-backend-api.herokuapp.com/api/'
  
 
 
@@ -50,7 +50,7 @@ export const CreateArticle=(image,user,tittle,discription)=> async(dispatch) =>{
  
 
 export const getUserArticles=()=> async  (dispatch) =>{
-    const data = await axios.get('http://localhost:8000/api/user_article_list/',{headers:authHeader()})
+    const data = await axios.get('https://articles-backend-api.herokuapp.com/api/user_article_list/',{headers:authHeader()})
     dispatch({
         type:GET_USER_ARTICLES,
         payload: data.data
