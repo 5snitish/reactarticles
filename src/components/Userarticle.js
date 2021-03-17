@@ -1,8 +1,8 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {useDispatch} from "react-redux"
 import {DeleteArticle} from "../actions/userService"
 import {Link} from 'react-router-dom' 
- 
+ import{getUserArticles}from '../actions/userService'
  
 import '../css/userarticle.css';
  
@@ -12,6 +12,9 @@ const  Userarticle = ({article}) => {
     
      
   
+    useEffect(()=>{
+      dispatch(getUserArticles( ));
+  },[])
  
 
     
@@ -39,7 +42,7 @@ const  Userarticle = ({article}) => {
   <div  className="col-sm">
 
    <Link to ={`/edit_article/${article.id}`}><button className="btn btn-warning">edit </button> </Link>
- <button   onClick={()=> dispatch(DeleteArticle(article.id))} className="btn btn-danger"> delete </button> 
+   <Link to ="/yourposts"> <button   onClick={()=> dispatch(DeleteArticle(article.id))} className="btn btn-danger"> delete </button>  </Link>
 
 
   </div>

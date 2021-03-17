@@ -27,7 +27,7 @@ const logOut = ()=>{
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
-  <div className="collapse navbar-collapse  " id="navbarScroll">
+  <div className="collapse navbar-collapse  "  >
    <div className="container-fluid " id= "bt">
   <Link to = "/create"><button className="btn btn-dark col-sm" type="submit">Write</button></Link>
   <Link to="/yourposts"><button className="btn btn-outline-warning col-sm " type="submit">your articles</button></Link>

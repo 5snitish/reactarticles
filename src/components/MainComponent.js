@@ -21,7 +21,7 @@ const MainComponent = ({article} ) => {
           <hr></hr>
 
           <p class="card-text">{article.discription}</p>
-          <Link to = {`/article/${article.id}`}   style = {{paddingLeft:"85%"}}  ><button className="btn btn-outline-success">read more</button> </Link>
+          <Link to = {`/article/${article.id}`}   style = {{paddingLeft:"10%"}}  ><button className="btn btn-outline-success">read more</button> </Link>
         </div>
       </div>  
     )

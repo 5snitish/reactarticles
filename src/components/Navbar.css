@@ -1,6 +1,11 @@
 #bt{
-padding-left:600px;
+
+padding-inline: 320px;
 }
+
+ bt Link{
+   padding:0px;
+ }
 
   #cont{
     flex-direction: row  ;

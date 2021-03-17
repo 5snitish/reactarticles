@@ -10,7 +10,7 @@ import {useSelector,useDispatch} from "react-redux"
 const UserArticles = () => {
 
   const uarticles = useSelector((state)=>state.userService)
-  console.log(uarticles)
+   
   
    const dispatch = useDispatch()
 
